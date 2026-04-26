@@ -106,8 +106,8 @@ A full-featured web-based control panel for managing Palworld dedicated servers.
 
 ### Installation
 
-```
 [Download latest version from Releases Here](https://github.com/PalSupervisor/PalSupervisor/releases)
+```
 extract the rar and start PalSupervisor.exe
 a default webpage should open at http://localhost:3000
 
