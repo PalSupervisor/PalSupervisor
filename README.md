@@ -1,5 +1,7 @@
 # 🎮 PalSupervisor — Palworld Dedicated Server Manager
-
+<br><br>
+<img width="1500" height="659" alt="image" src="https://github.com/user-attachments/assets/bc608d91-6d3f-40bd-a5b3-bf3eab239644" />
+<br><br>
 A full-featured web-based control panel for managing Palworld dedicated servers. Built for server owners who want a clean UI and powerful tools without touching the command line after initial setup.
 <br>
 [Join Our Discord for free/paid/trial keys HERE](https://discord.gg/VsctnXnKRk)
