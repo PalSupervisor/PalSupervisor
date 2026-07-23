@@ -33,12 +33,19 @@ From real-time monitoring and surgical player moderation to automated anti-cheat
 ```
 - View all online and historical players across all platforms
 - Supports Steam, Xbox (GDK/EOS), 32-char hex UIDs, and raw XUIDs (auto-detected)
-- Inspect any player: inventory, Pals, stats, base
+- Deep inspector: full inventory (every container), owned Pals with IVs/passives/location,
+  tech points, Paldeck progress
+- Built-in XP-to-level table (up to Lv. 65) — grant XP or set level directly
+- Delete individual items or Pals straight from the inspector
+- Targeted resets: inventory, Pals, stats, or techs — or reset everything at once
+- Rename players from the panel
 - Activity log per player
 - Kick, ban, unban — one-click moderation
 - Full ban list management
-- Global item search — find who's carrying what across the server
-- Give Items (any ID, any count) and Give Pals (with stats, passives, level)
+- Global item search — find who's carrying what across the server, including guild chests
+- Give Items (any ID, any count) and Give Pals (with stats, passives, level, IVs)
+- Kit Manager — build/edit starter & custom kits, give any kit to any player in one click
+- Starter Kit system — auto-gift new players, with claim tracking and one-click reset
 - PalDefender Templates — save named Pal loadouts and gift them to players
 ```
 
@@ -55,8 +62,29 @@ From real-time monitoring and surgical player moderation to automated anti-cheat
 ```
 - Browse every guild on the server
 - View members, levels, and bases
-- Drill into base chests and base Pals
+- Per-base module breakdown: Energy, Medical, Transport, Passive Effects,
+  Gathering, Storage, Workstations, Maintenance
+- Live work-task summary per base (building, repair, healing, gathering,
+  crafting, farming, defense)
+- Real-time raid status with cooldown percentage
+- Research/lab tab: current research, total recipes, in-progress count
+- Drill into base chests and base Pals (with vitals: HP, sanity, hunger, condition)
+- Destroy bases, promote members to guild leader, rename guilds
 - Full guild oversight for moderators
+```
+
+### 🗓️ Event Scripting Engine
+```
+- Active / Scheduled / Recurring / History event tabs
+- Action types per event: apply config preset, toggle mods, restart server,
+  give item, give stat points, give kit, spawn Pal, raid (multi-spawn),
+  and steal item (randomly takes from one online player, gifts another)
+- Recipients: all online, or random N online, with "don't repeat recipients"
+- Mid-event firing control per action: at event start, at a random moment
+  in a time window, or repeated on an interval
+- Optional "on end" cleanup: revert config, revert mods, restart after
+  revert — with its own countdown-warning message
+- Save any event as a reusable template
 ```
 
 ### 🛡️ Anti-Cheat
@@ -89,6 +117,15 @@ From real-time monitoring and surgical player moderation to automated anti-cheat
 - View mod details, file lists, and changelogs in-app
 - One-click install directly to your server
 ```
+### 💬 Discord Bot Integration
+```
+- Built-in Discord bot — enable/disable and monitor live status from the panel
+- Per-Discord-role permission mapping
+- Bot activity status and server-members intent toggle
+- Quick setup guide built into the UI
+- Snowflake-safe ID handling (no JS float-precision corruption on Discord IDs)
+```
+
 ### 💾 Backup System
 ```
 - On-demand and scheduled world snapshots
@@ -159,6 +196,7 @@ From real-time monitoring and surgical player moderation to automated anti-cheat
 - Anti-Cheat — thresholds and scan cadence
 - Whitelist — add/remove Steam IDs, global enable toggle
 - Map Display — fine-tune what appears on the live map
+- Discord Bot — role permissions, activity status, quick setup guide
 - Themes — full UI customization
 - Dashboard Port Manager + Restart App (with auto-reconnect)
 - Full Config Export / Import (JSON)
