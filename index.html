@@ -7,18 +7,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;1,300&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg:        #070b12;
-      --bg2:       #0c1220;
-      --bg3:       #111827;
-      --border:    #1e2d45;
-      --accent:    #00d4ff;
-      --accent2:   #7b5ff5;
-      --accent3:   #00ff9d;
-      --text:      #e2eaf5;
-      --muted:     #6b7fa0;
-      --card:      #0d1828;
-      --glow:      rgba(0,212,255,0.18);
-      --glow2:     rgba(123,95,245,0.18);
+      --bg:        #050b14;
+      --bg2:       #0d2436;
+      --bg3:       #14304a;
+      --border:    #1c3f5f;
+      --accent:    #ff2d4d;
+      --accent2:   #ff5570;
+      --accent3:   #4fd1a5;
+      --text:      #f2f5fa;
+      --muted:     #a9c3db;
+      --card:      #0d2436;
+      --glow:      rgba(255,45,77,0.18);
+      --glow2:     rgba(255,85,112,0.18);
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -50,8 +50,8 @@
       position: fixed;
       inset: 0;
       background-image:
-        linear-gradient(rgba(0,212,255,0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0,212,255,0.03) 1px, transparent 1px);
+        linear-gradient(rgba(255,45,77,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,45,77,0.03) 1px, transparent 1px);
       background-size: 40px 40px;
       pointer-events: none;
       z-index: 0;
@@ -124,12 +124,12 @@
     }
     .btn-primary {
       background: var(--accent);
-      color: #030609;
-      box-shadow: 0 0 20px rgba(0,212,255,0.4);
+      color: #ffffff;
+      box-shadow: 0 0 20px rgba(255,45,77,0.4);
     }
     .btn-primary:hover {
-      background: #33ddff;
-      box-shadow: 0 0 36px rgba(0,212,255,0.65);
+      background: #ff5570;
+      box-shadow: 0 0 36px rgba(255,45,77,0.65);
       transform: translateY(-1px);
     }
     .btn-secondary {
@@ -138,8 +138,8 @@
       border: 1.5px solid var(--accent);
     }
     .btn-secondary:hover {
-      background: rgba(0,212,255,0.08);
-      box-shadow: 0 0 20px rgba(0,212,255,0.2);
+      background: rgba(255,45,77,0.08);
+      box-shadow: 0 0 20px rgba(255,45,77,0.2);
       transform: translateY(-1px);
     }
     .btn-discord {
@@ -179,13 +179,13 @@
     }
     .hero-orb-1 {
       width: 600px; height: 600px;
-      background: radial-gradient(circle, rgba(0,212,255,0.12) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(255,45,77,0.12) 0%, transparent 70%);
       top: -100px; left: 50%;
       transform: translateX(-50%);
     }
     .hero-orb-2 {
       width: 400px; height: 400px;
-      background: radial-gradient(circle, rgba(123,95,245,0.14) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(255,85,112,0.14) 0%, transparent 70%);
       bottom: 0; right: -100px;
     }
 
@@ -193,8 +193,8 @@
       display: inline-flex;
       align-items: center;
       gap: .5rem;
-      background: rgba(0,212,255,0.08);
-      border: 1px solid rgba(0,212,255,0.25);
+      background: rgba(255,45,77,0.08);
+      border: 1px solid rgba(255,45,77,0.25);
       border-radius: 100px;
       padding: .35rem 1rem;
       font-size: .8rem;
@@ -309,7 +309,7 @@
       border-radius: 12px;
       overflow: hidden;
       border: 1px solid var(--border);
-      box-shadow: 0 0 60px rgba(0,212,255,0.08), 0 30px 80px rgba(0,0,0,0.5);
+      box-shadow: 0 0 60px rgba(255,45,77,0.08), 0 30px 80px rgba(0,0,0,0.5);
       background: var(--bg3);
       aspect-ratio: 16/9;
     }
@@ -367,8 +367,8 @@
       z-index: 10;
       width: 44px; height: 44px;
       border-radius: 50%;
-      background: rgba(0,212,255,0.12);
-      border: 1px solid rgba(0,212,255,0.3);
+      background: rgba(255,45,77,0.12);
+      border: 1px solid rgba(255,45,77,0.3);
       color: var(--accent);
       cursor: pointer;
       display: flex;
@@ -377,8 +377,8 @@
       transition: all .2s;
     }
     .slider-btn:hover {
-      background: rgba(0,212,255,0.22);
-      box-shadow: 0 0 20px rgba(0,212,255,0.3);
+      background: rgba(255,45,77,0.22);
+      box-shadow: 0 0 20px rgba(255,45,77,0.3);
     }
     .slider-btn.prev { left: -18px; }
     .slider-btn.next { right: -18px; }
@@ -434,12 +434,12 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(135deg, transparent 60%, rgba(0,212,255,0.04));
+      background: linear-gradient(135deg, transparent 60%, rgba(255,45,77,0.04));
       pointer-events: none;
     }
     .feature-card:hover {
-      border-color: rgba(0,212,255,0.3);
-      box-shadow: 0 0 30px rgba(0,212,255,0.07), 0 8px 30px rgba(0,0,0,0.3);
+      border-color: rgba(255,45,77,0.3);
+      box-shadow: 0 0 30px rgba(255,45,77,0.07), 0 8px 30px rgba(0,0,0,0.3);
       transform: translateY(-3px);
     }
 
@@ -479,7 +479,7 @@
     }
     .roles-wrapper th {
       padding: .85rem 1.2rem;
-      background: rgba(0,212,255,0.06);
+      background: rgba(255,45,77,0.06);
       font-family: 'Rajdhani', sans-serif;
       font-weight: 700;
       letter-spacing: .08em;
@@ -496,7 +496,7 @@
       color: var(--text);
     }
     .roles-wrapper tr:last-child td { border-bottom: none; }
-    .roles-wrapper tr:hover td { background: rgba(0,212,255,0.02); }
+    .roles-wrapper tr:hover td { background: rgba(255,45,77,0.02); }
 
     .role-badge {
       display: inline-block;
@@ -507,8 +507,8 @@
       font-weight: 600;
     }
     .role-owner   { background: rgba(255,215,0,0.12);   color: #ffd700; border: 1px solid rgba(255,215,0,0.3); }
-    .role-super   { background: rgba(0,212,255,0.12);   color: var(--accent); border: 1px solid rgba(0,212,255,0.3); }
-    .role-admin   { background: rgba(123,95,245,0.12);  color: #a78bfa; border: 1px solid rgba(123,95,245,0.3); }
+    .role-super   { background: rgba(255,45,77,0.12);   color: var(--accent); border: 1px solid rgba(255,45,77,0.3); }
+    .role-admin   { background: rgba(255,85,112,0.12);  color: #ff8fa3; border: 1px solid rgba(255,85,112,0.3); }
     .role-mod     { background: rgba(0,255,157,0.1);    color: var(--accent3); border: 1px solid rgba(0,255,157,0.25); }
     .role-member  { background: rgba(100,116,139,0.15); color: #94a3b8; border: 1px solid rgba(100,116,139,0.3); }
     .role-visitor { background: rgba(50,60,80,0.15);    color: var(--muted); border: 1px solid var(--border); }
@@ -525,7 +525,7 @@
     .connections-table table { width: 100%; border-collapse: collapse; }
     .connections-table th {
       padding: .85rem 1.2rem;
-      background: rgba(0,212,255,0.06);
+      background: rgba(255,45,77,0.06);
       font-family: 'Rajdhani', sans-serif;
       font-weight: 700;
       letter-spacing: .08em;
@@ -571,8 +571,8 @@
       flex-shrink: 0;
       width: 32px; height: 32px;
       border-radius: 50%;
-      background: rgba(0,212,255,0.1);
-      border: 1px solid rgba(0,212,255,0.3);
+      background: rgba(255,45,77,0.1);
+      border: 1px solid rgba(255,45,77,0.3);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -611,8 +611,8 @@
       align-items: center;
       gap: .4rem;
       padding: .4rem .9rem;
-      background: rgba(0,212,255,0.06);
-      border: 1px solid rgba(0,212,255,0.2);
+      background: rgba(255,45,77,0.06);
+      border: 1px solid rgba(255,45,77,0.2);
       border-radius: 6px;
       font-size: .85rem;
       color: var(--accent);
@@ -637,7 +637,7 @@
       transition: all .2s;
     }
     .lang-pill:hover {
-      border-color: rgba(0,212,255,0.3);
+      border-color: rgba(255,45,77,0.3);
       color: var(--text);
     }
 
@@ -649,9 +649,9 @@
       border-radius: 16px;
       padding: 4rem;
       text-align: center;
-      background: linear-gradient(135deg, rgba(0,212,255,0.06) 0%, rgba(123,95,245,0.08) 100%);
-      border: 1px solid rgba(0,212,255,0.15);
-      box-shadow: 0 0 80px rgba(0,212,255,0.06);
+      background: linear-gradient(135deg, rgba(255,45,77,0.06) 0%, rgba(255,85,112,0.08) 100%);
+      border: 1px solid rgba(255,45,77,0.15);
+      box-shadow: 0 0 80px rgba(255,45,77,0.06);
       overflow: hidden;
     }
     .cta-banner::before {
@@ -660,7 +660,7 @@
       top: -80px; left: 50%;
       transform: translateX(-50%);
       width: 500px; height: 300px;
-      background: radial-gradient(ellipse, rgba(0,212,255,0.1) 0%, transparent 70%);
+      background: radial-gradient(ellipse, rgba(255,45,77,0.1) 0%, transparent 70%);
       pointer-events: none;
     }
     .cta-banner h2 {
@@ -890,7 +890,7 @@
       <div class="feature-card">
         <span class="feature-icon">📈</span>
         <h3>Monitoring & Logs</h3>
-        <p>Real-time server stats with historical charts. Live alert feed. Filterable log viewer. API health dashboard for RCON, PST, and Game REST. Crash detection and reporting.</p>
+        <p>Real-time server stats with historical charts. Live alert feed. Filterable log viewer. API health dashboard for RCON, SAV, and Game REST. Crash detection and reporting.</p>
       </div>
       <div class="feature-card">
         <span class="feature-icon">🔐</span>
@@ -946,7 +946,7 @@
         <div class="step-num">4</div>
         <div class="step-content">
           <h4>Complete the 5-step setup wizard</h4>
-          <p>Point to your <span class="code-inline">PalServer.exe</span>, configure RCON & REST API, set up PST auth, and configure memory management. Done!</p>
+          <p>Point to your <span class="code-inline">PalServer.exe</span>, configure RCON & REST API, set up SAV auth, and configure memory management. Done!</p>
         </div>
       </div>
       <div class="install-step">
@@ -964,7 +964,7 @@
   <!-- CONNECTIONS -->
   <section>
     <p class="section-label">Connections</p>
-    <h2 class="section-title">Three Powerful APIs, One Panel</h2>
+    <h2 class="section-title">Two Powerful APIs, One Panel</h2>
     <div class="connections-table">
       <table>
         <thead>
@@ -984,11 +984,6 @@
             <td><strong>Game REST API</strong></td>
             <td>Server info, metrics, player list</td>
             <td><span class="port-tag">8212</span></td>
-          </tr>
-          <tr>
-            <td><strong>PST API</strong></td>
-            <td>Save file inspection, player editing</td>
-            <td><span class="port-tag">8080</span></td>
           </tr>
         </tbody>
       </table>
